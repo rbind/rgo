@@ -11,7 +11,7 @@ tags:
   - cgo
 ---
 
-The logical next step of [calling go from R](/blog/2017/05/14/calling-go-from-r) is to have
+The logical next step of [calling go from R](/post/2017/05/14/calling-go-from-r) is to have
 go code (and therefore go packages) in an R package. Most of the tools that we need 
 are available, we can have C (or C++) code in the `src/` directory of an R package, 
 and we can call go from C using [cgo](https://golang.org/cmd/cgo/), it's all there. It's just 
