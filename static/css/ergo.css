@@ -20,3 +20,20 @@ hr {
 .text-faded{
   font-size: 20pt !important ;
 }
+
+#mainNav {
+  border-bottom: 1px solid black !important ;
+  background-color: red ! important ;
+}
+
+#content {
+  margin-top: 40px ;
+}
+
+.navbar-brand .page-scroll {
+  color: black !important ;
+}
+
+a.page-scroll {
+  color: black !important ;
+}
