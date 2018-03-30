@@ -1,0 +1,22 @@
+.header-content-inner p {
+  margin-top: 600px !important ;
+  font-size: 20pt !important ;
+  color: black !important ;
+  background: #ffffff88 ;
+  max-width: 100% !important ;
+}
+
+hr {
+  max-width: 50px;
+  border-color: #f05f40;
+  border-width: 3px;
+}
+
+
+.header-content-inner {
+  width: 100% ;
+}
+
+.text-faded{
+  font-size: 20pt !important ;
+}

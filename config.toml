@@ -1,30 +1,88 @@
-baseurl = "/"
-relativeurls = true
+baseurl = "https://go.rbind.io/"
 languageCode = "en-us"
-title = "R and Go"
-theme = "hugo-lithium-theme"
+title = "ergo"
+theme = "hugo-creative-theme"
 googleAnalytics = ""
-disqusShortname = ""
-ignoreFiles = ["\\.Rmd$", "_files$", "_cache$"]
-
-[permalinks]
-    post = "/:year/:month/:day/:slug/"
+ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 
 [params]
-    description = "R and Go"
 
-    # options for highlight.js (version, additional languages, and theme)
-    highlightjsVersion = "9.11.0"
-    highlightjsCDN = "//cdn.bootcss.com"
-    highlightjsLang = ["r", "yaml"]
-    highlightjsTheme = "github"
+	# You can use Markdown syntax for urls [text](//url.to/source) for
+	# most longer texts.
 
-    MathJaxCDN = "//cdn.bootcss.com"
-    MathJaxVersion = "2.7.1"
+	# All icons using Fontawesome's icon font. Look at http://fontawesome.io/icons/
+	# for more icons. The icons are represented by their corresponding
+	# CSS class.
 
-    [params.logo]
-    url = "logo.png"
-    width = 50
-    height = 50
-    alt = "Logo"
+	# All projects of the portfolio are defined in their own files.
+	# You can find example projects at 'exampleSite/data/projects'. Copy the 'projects'
+	# folder into the 'data' directory at the root of this Hugo site.
+	# For more information take a look at the README.
 
+	# To provide some metadata for search engines feel free to add some
+	# information about you and your website.
+	name = "ergo"
+	description = " `ergo` is an effort to bridge `R` with the `Go` programming language. \
+		Go is an open source programming language that makes it easy to build simple, \
+		reliable, and efficient software.\
+		"
+
+	# The path must be relative to the static folder
+	favicon = "favicon.ico"
+
+	# Navigation
+	[params.navigation]
+		brand = "ergo"
+
+		[params.navigation.links]
+			about     = "About"
+			contact   = "Contact"
+
+
+	# Hero section
+	[params.hero]
+		# To change the background of the hero section, replace the 'header.jpg' at './static/img' with your own.
+		slogan     = "ergo"
+		subtitle   = "`ergo` is an effort to bridge R with the Go programming language. \
+		 	Go is an open source programming language that makes it easy to build simple, reliable, and efficient software. \
+			Together R and Go make an interesting mix, and ergo defines the tools to make the process easy. \
+			"
+		# buttonText = "Find out more"
+
+
+	# About section
+	[params.about]
+		headline    = "Read the proposal"
+		description = "ergo is currently looking for funding. We have a [proposal](https://github.com/rstats-go/proposal/blob/master/proposal.md) on github that is being submitted to the R Consortium"
+		# buttonText  = "Get started!"
+
+	# Contact section
+	[params.contact]
+		headline = "Let's Get In Touch!"
+		description = "The best way to get in touch is to engage with one of the repos from the [rstats-go](https://github.com/rstats-go) organisation on github. "
+		email = "romain@purrple.cat"
+    twitter = "romain_francois"
+
+	# Service section
+	[params.services]
+		headline = "ergo in a nutshell"
+
+	 	[[params.services.list]]
+			icon = "fa-github"
+	    title = "On github"
+	    description = "ergo and related tools are available as part of the rstats-go organisation on github"
+
+	  [[params.services.list]]
+			icon = "fa-fighter-jet"
+			title = "Fast"
+			description = "Take advantage of the power of the Go language in your R packages"
+
+		[[params.services.list]]
+	    icon = "fa-gear"
+	    title = "Dependency"
+	    description = "ergo is a development time dependency. "
+
+	   [[params.services.list]]
+	    icon = "fa-heart"
+	    title = "Made with Love"
+	    description = "and coffee. "
